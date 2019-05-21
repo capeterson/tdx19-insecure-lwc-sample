@@ -11,7 +11,8 @@ public with sharing class QuickCreateController {
         if(!SObjectType.Opportunity.createable){
             throw new AuraHandledException('You can\'t create opportunities!');
         }
-        insert opp;
+        insert opp; //insecure
+        //insert Security.stripInaccessible(AccessType.CREATABLE, new List<Opportunity>{opp}).getRecords(); //secure
         return opp;
     }
 }
