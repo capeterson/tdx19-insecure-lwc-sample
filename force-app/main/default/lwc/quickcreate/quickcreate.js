@@ -18,9 +18,18 @@ export default class Quickcreate extends LightningElement {
         let field = event.target.name;
         this.opp[field] = event.target.value;
     }
-    saveRecord(){
+
+    saveRecord(event) {
+        debugger;
         create({opp: this.opp})
-            .then( result => { this.opp.result; })
-            .catch(error => {this.error = error;});
+            .then(result => {
+                this.opp = result;
+                console.log('Saved opportunity record', this.opp);
+                event.target.disabled = true;
+            })
+            .catch(error => {
+                this.error = error;
+            });
     }
+
 }
