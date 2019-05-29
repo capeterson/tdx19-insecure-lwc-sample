@@ -15,7 +15,7 @@
     </layoutAssignments>
     <tabVisibilities>
         <tab>Neo_Quick_Create</tab>
-        <visibility>Hidden</visibility>
+        <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <userLicense>Salesforce</userLicense>
     <userPermissions>
