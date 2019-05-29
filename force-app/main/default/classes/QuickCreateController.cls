@@ -14,6 +14,7 @@ public with sharing class QuickCreateController {
             || !SObjectType.Opportunity.fields.CloseDate.isCreateable()){
             throw new AuraHandledException('Error: insufficient access to create opportunity record');
         }
+        //uncomment to make this component secure. It's vulnerable to injecton without this.
         // opp = (Opportunity) Security.stripInaccessible(AccessType.CREATABLE, new List<Opportunity>{opp}).getRecords()[0];
         insert opp;
         return opp;
