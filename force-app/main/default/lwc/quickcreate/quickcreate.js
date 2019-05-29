@@ -29,6 +29,7 @@ export default class Quickcreate extends LightningElement {
             })
             .catch(error => {
                 this.error = error;
+                console.error('Unexpeted error saving opp:',error);
             });
     }
 

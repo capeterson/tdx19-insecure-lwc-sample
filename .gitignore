@@ -2,3 +2,4 @@
 .sfdx
 IlluminatedCloud
 *.iml
+.vscode
