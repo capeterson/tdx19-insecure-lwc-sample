@@ -10,9 +10,6 @@
         <field>Opportunity.Manager_Approved__c</field>
         <readable>false</readable>
     </fieldPermissions>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-    </layoutAssignments>
     <userLicense>Salesforce</userLicense>
     <userPermissions>
         <enabled>true</enabled>
