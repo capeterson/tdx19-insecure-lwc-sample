@@ -1,5 +1,5 @@
 {
-    "Username": "tester2@lwc-insecure.org",
+    "Username": "tester0@lwc-insecure.org",
     "LastName": "Hobbs",
     "Email": "tester1@sfdx.org",
     "Alias": "tester1",
@@ -8,6 +8,5 @@
     "EmailEncodingKey": "UTF-8",
     "LanguageLocaleKey": "en_US",
     "profileName": "Demo User",
-    "UserPreferencesUserDebugModePref": true,
-    "generatePassword": true
+    "UserPreferencesUserDebugModePref": true
 }
