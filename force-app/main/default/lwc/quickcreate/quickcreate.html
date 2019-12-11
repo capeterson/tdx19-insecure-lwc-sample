@@ -1,12 +1,14 @@
 <template>
-    <lightning-card>
+    <lightning-card title="Quick Opportunity Create">
        
     <lightning-layout vertical-align="center">
         <lightning-layout-item padding="around-small">
             <lightning-input label="Opportunity Name" value={opp.Name} onchange={handleFieldChange} name="Name"></lightning-input>
             <lightning-input label="Opportunity Amount" value={opp.Amount} onchange={handleFieldChange} name="Amount"></lightning-input>
             <lightning-input type="date" label="Close Date" value={opp.CloseDate} onchange={handleFieldChange} name="CloseDate"></lightning-input>
-            <lightning-button label="Save" onclick={saveRecord}></lightning-button>        
+            <div class="slds-m-top_medium">
+                <lightning-button label="Save" onclick={saveRecord}></lightning-button> 
+            </div>       
         </lightning-layout-item>
     </lightning-layout>
 
